@@ -1,13 +1,38 @@
 # SAJI Text Motion Studio
 
-Native Android text-motion editor with a clean dark editing workspace inspired by the supplied mobile editor reference.
+A native Android text-motion template studio built with Kotlin and Jetpack Compose.
 
-## Initial UI foundation
-- Dark premium workspace and large central preview
-- Top navigation with Export action
-- Bottom editing tools: Canvas, Audio, Sticker, Text, Motion, Filter and Layer
-- Editable text layer and quick motion preset selector
-- Kotlin + Jetpack Compose
+## Template gallery
 
-## Next implementation stages
-Timeline interactions, animated text rendering, keyframes, audio beat sync, project saving and video export. These are not active in this initial UI commit yet.
+The app includes 36 built-in animated text presets across five groups:
+
+- Kinetic
+- 3D
+- Captions
+- Cinematic
+- Social
+
+## Included now
+
+- Premium dark template gallery.
+- Live animated preview on every template card.
+- Search by template name or description.
+- Category filters.
+- Full-screen preview for each template.
+- Editable custom text that updates the preview live.
+- "Use this template" action that selects the chosen preset.
+- All animations are native Compose animations and work without downloading template packs.
+
+## Build
+
+Open the project in Android Studio with JDK 17 and Android SDK 35.
+
+The GitHub Actions workflow builds a debug APK using Gradle 8.9:
+
+```bash
+gradle assembleDebug
+```
+
+## Next stages
+
+The current implementation is the template gallery and preview foundation. Integration with a full timeline, saved presets, keyframes, audio beat sync, and video export will be added in later stages.
