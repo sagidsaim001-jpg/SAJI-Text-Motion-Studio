@@ -552,6 +552,86 @@ private fun AnimatedTemplateText(
             scaleY = 0.62f + progress * 0.38f
             alpha = 0.4f + progress * 0.6f
         }
+
+        MotionStyle.STACKED -> {
+            scaleY = 0.72f + 0.28f * progress
+            translationY = (1f - progress) * 12f
+            spacing = (0.03f + 0.08f * (1f - progress)).sp
+        }
+        MotionStyle.WORD_STACK -> {
+            scaleX = 0.82f + 0.18f * progress
+            scaleY = 0.76f + 0.24f * progress
+            translationY = sin(progress * PI.toFloat()) * -5f
+        }
+        MotionStyle.SLAM -> {
+            scaleX = 1.28f - 0.28f * progress
+            scaleY = 1.28f - 0.28f * progress
+            translationY = (1f - progress) * -18f
+        }
+        MotionStyle.SHADOW -> {
+            translationX = sin(progress * 2f * PI.toFloat()) * 2f
+            translationY = sin(progress * 2f * PI.toFloat()) * 2f
+            alpha = 0.82f + 0.18f * progress
+        }
+        MotionStyle.SCRIPT_ACCENT -> {
+            rotationZ = (0.5f - progress) * 7f
+            scaleX = 0.9f + 0.1f * progress
+            alpha = 0.72f + 0.28f * progress
+        }
+        MotionStyle.FLIP_STACK -> {
+            rotationX = (1f - progress) * 88f
+            rotationY = (1f - progress) * -18f
+            scaleY = 0.82f + 0.18f * progress
+        }
+        MotionStyle.SHIMMER -> {
+            scaleX = 0.96f + sin(progress * 2f * PI.toFloat()) * 0.04f
+            alpha = 0.72f + 0.28f * progress
+        }
+        MotionStyle.NEON_GLOW -> {
+            scaleX = 0.94f + 0.06f * progress
+            scaleY = 0.94f + 0.06f * progress
+            alpha = 0.65f + 0.35f * progress
+        }
+        MotionStyle.VERTICAL_WIPE -> {
+            scaleY = 0.08f + 0.92f * progress
+            alpha = 0.45f + 0.55f * progress
+        }
+        MotionStyle.GLOW_PULSE -> {
+            val pulse = sin(progress * PI.toFloat())
+            scaleX = 0.96f + pulse * 0.07f
+            scaleY = 0.96f + pulse * 0.07f
+            alpha = 0.82f + pulse * 0.18f
+        }
+        MotionStyle.SWEEP -> {
+            translationX = (1f - progress) * -46f
+            rotationZ = (1f - progress) * -4f
+            alpha = 0.45f + 0.55f * progress
+        }
+        MotionStyle.WAVE_3D -> {
+            translationY = sin(progress * 2f * PI.toFloat()) * 8f
+            rotationY = sin(progress * 2f * PI.toFloat()) * 12f
+            rotationZ = sin(progress * 2f * PI.toFloat()) * 2f
+        }
+        MotionStyle.FLOAT_UP -> {
+            translationY = (1f - progress) * 28f + sin(progress * 2f * PI.toFloat()) * 4f
+            alpha = 0.45f + 0.55f * progress
+        }
+        MotionStyle.SPLIT_REVEAL -> {
+            scaleX = 0.04f + 0.96f * progress
+            rotationY = (1f - progress) * 24f
+            alpha = 0.55f + 0.45f * progress
+        }
+        MotionStyle.RGB_SHIFT -> {
+            translationX = sin(progress * 38f) * 4.5f
+            translationY = sin(progress * 19f) * 1.5f
+            rotationZ = sin(progress * 31f) * 1.2f
+        }
+        MotionStyle.DEPTH -> {
+            rotationY = (0.5f - progress) * 30f
+            rotationX = (1f - progress) * 18f
+            scaleX = 0.88f + 0.12f * progress
+            scaleY = 0.88f + 0.12f * progress
+        }
     }
 
     Box(modifier = modifier, contentAlignment = Alignment.Center) {
