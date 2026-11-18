@@ -379,7 +379,7 @@ private fun TemplatePreviewScreen(
                 .fillMaxWidth()
                 .height(250.dp)
                 .clip(RoundedCornerShape(26.dp))
-                .background(Brush.linearGradient(listOf(Color(0xFF292448), Color(0xFF172D3A), Color(0xFF171C2B)))
+                .background(Brush.linearGradient(listOf(Color(0xFF292448), Color(0xFF172D3A), Color(0xFF171C2B))))
                 .padding(14.dp),
             contentAlignment = Alignment.Center
         ) {
