@@ -36,3 +36,8 @@ gradle assembleDebug
 ## Next stages
 
 The current implementation is the template gallery and preview foundation. Integration with a full timeline, saved presets, keyframes, audio beat sync, and video export will be added in later stages.
+
+
+## TXTFX-inspired Android presets
+
+The app includes 22 additional Android-native motion presets inspired by the supplied TXTFX preview set. The original After Effects CEP extension and AEP project are not executed on Android; these presets are recreated with Jetpack Compose animations. The original package identifies source compositions as TXT 1 through TXT 22, so the app uses descriptive names for the recreated styles rather than claiming an exact one-to-one conversion.
