@@ -171,7 +171,7 @@ private fun TemplateGalleryScreen(
             }
             Surface(shape = CircleShape, color = PanelRaised) {
                 Text(
-                    "36 PRESETS",
+                    "${TemplateCatalog.templates.size} PRESETS",
                     modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
                     color = Color(0xFFBFB1FF),
                     fontSize = 10.sp,
@@ -217,7 +217,7 @@ private fun TemplateGalleryScreen(
                     }
                     Spacer(Modifier.height(8.dp))
                     Text(
-                        activeTemplate?.title ?: "36 fresh ways to move your words",
+                        activeTemplate?.title ?: "${TemplateCatalog.templates.size} fresh ways to move your words",
                         color = White,
                         fontSize = 17.sp,
                         fontWeight = FontWeight.Bold
