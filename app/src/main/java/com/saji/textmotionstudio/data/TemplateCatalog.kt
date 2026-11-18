@@ -37,8 +37,30 @@ object TemplateCatalog {
         TextTemplate("glitch-cut", "Glitch Cut", "Social", "A punchy digital cut with slight jitter.", MotionStyle.GLITCH, 0xFF8FE9FF, 950),
         TextTemplate("word-focus", "Word Focus", "Captions", "A focused zoom for one key phrase.", MotionStyle.ZOOM, 0xFFFFD88F, 1500),
         TextTemplate("halo-pulse", "Halo Pulse", "Cinematic", "A restrained pulse for a polished finish.", MotionStyle.PULSE, 0xFFB7A4FF, 1750),
-        TextTemplate("spin-caption", "Spin Caption", "Social", "A quick rotation for energetic titles.", MotionStyle.ROLL, 0xFF9AE3CE, 1200)
+        TextTemplate("spin-caption", "Spin Caption", "Social", "A quick rotation for energetic titles.", MotionStyle.ROLL, 0xFF9AE3CE, 1200),
+        TextTemplate("tx1", "Stacked Lyrics", "Stacked", "Three-line stacked title with a bold center focus.", MotionStyle.STACKED, 0xFF45D7F0, 1450),
+        TextTemplate("tx2", "Impact Word Stack", "Kinetic", "A compact headline stack with a strong impact entrance.", MotionStyle.WORD_STACK, 0xFFFF5D62, 1200),
+        TextTemplate("tx3", "Center Collision", "Kinetic", "Words converge toward the center and settle.", MotionStyle.SLAM, 0xFFFF6C68, 1100),
+        TextTemplate("tx4", "Echo Shadow", "Social", "Layered shadow-style title with a subtle offset.", MotionStyle.SHADOW, 0xFFB9C6FF, 1600),
+        TextTemplate("tx5", "Red Script Title", "Cinematic", "Bold title entrance with an elegant secondary accent feel.", MotionStyle.SCRIPT_ACCENT, 0xFFFF5B62, 1700),
+        TextTemplate("tx6", "Blue Stack", "3D", "A cool-toned stacked title with a dimensional flip.", MotionStyle.FLIP_STACK, 0xFF667BFF, 1450),
+        TextTemplate("tx7", "Golden Cinema", "Cinematic", "A warm cinematic title with a smooth reveal.", MotionStyle.SHIMMER, 0xFFFFC35C, 1900),
+        TextTemplate("tx8", "Neon Crossfade", "Social", "A bright neon-inspired title that pulses into focus.", MotionStyle.NEON_GLOW, 0xFFB45CFF, 1500),
+        TextTemplate("tx9", "Vertical Impact", "Kinetic", "A vertical title reveal with a punchy landing.", MotionStyle.VERTICAL_WIPE, 0xFF6C9DFF, 1250),
+        TextTemplate("tx10", "Neon Flash", "Social", "A quick flash entrance with a glowing accent.", MotionStyle.GLOW_PULSE, 0xFFFF62E8, 1050),
+        TextTemplate("tx11", "Classic Red Title", "Cinematic", "A bold centered title with a clean scale reveal.", MotionStyle.ZOOM, 0xFFFF4545, 1550),
+        TextTemplate("tx12", "Offset Headline", "Kinetic", "Offset words slide into a compact headline layout.", MotionStyle.SWEEP, 0xFFFFC84A, 1350),
+        TextTemplate("tx13", "Triple Line Rise", "Captions", "Three-line lyric layout with a rising entrance.", MotionStyle.RISE, 0xFF6BEA7A, 1550),
+        TextTemplate("tx14", "Prism Wave", "3D", "A lively dimensional wave with a bright finish.", MotionStyle.WAVE_3D, 0xFF75E6A8, 1750),
+        TextTemplate("tx15", "Elegant Script Reveal", "Cinematic", "A smooth reveal designed for mixed title styling.", MotionStyle.SCRIPT_ACCENT, 0xFFFFB18C, 1900),
+        TextTemplate("tx16", "Golden Sweep", "Cinematic", "A warm sweep with a tilted title landing.", MotionStyle.SWEEP, 0xFFFFB84A, 1650),
+        TextTemplate("tx17", "Blue Signature", "Cinematic", "A signature-inspired entrance with a flowing motion.", MotionStyle.FLOAT_UP, 0xFF45B8FF, 1850),
+        TextTemplate("tx18", "Pink Word Stack", "Social", "A stacked title with a playful bounce.", MotionStyle.WORD_STACK, 0xFFFF70D5, 1350),
+        TextTemplate("tx19", "Red Split Reveal", "Kinetic", "A bold split reveal that snaps into alignment.", MotionStyle.SPLIT_REVEAL, 0xFFFF5252, 1300),
+        TextTemplate("tx20", "Glitch Cut Title", "Social", "A fast digital cut with a brief horizontal jitter.", MotionStyle.RGB_SHIFT, 0xFFFF6666, 950),
+        TextTemplate("tx21", "Blue 3D Title", "3D", "A perspective title with a dimensional flip and scale.", MotionStyle.DEPTH, 0xFF786BFF, 1600),
+        TextTemplate("tx22", "Final Echo Title", "Cinematic", "A dramatic final title with an echo-style finish.", MotionStyle.SHADOW, 0xFFE9E9F2, 2100)
     )
 
-    val categories = listOf("All", "Kinetic", "3D", "Captions", "Cinematic", "Social")
+    val categories = listOf("All", "Kinetic", "3D", "Captions", "Cinematic", "Social", "Stacked")
 }
